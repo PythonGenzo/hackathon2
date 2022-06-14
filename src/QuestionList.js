@@ -1,7 +1,7 @@
 import { useEffect, useState, Navigate, useNavigate } from "react";
 import { API } from "./globalAPI";
 import { Question } from "./Question";
-import { AskQuestion, askQuestion } from "./AskQuestion";
+// import { AskQuestion, askQuestion } from "./AskQuestion";
 
 
 export function QuestionList() {
@@ -24,7 +24,9 @@ export function QuestionList() {
     <div>
       <div>
         <p>All Questions</p>
-        <button onClick={() => Navigate("/askQuestion")}>Ask Questions</button>
+        <button 
+        // onClick={() => Navigate("/askQuestion")}
+        >Ask Questions</button>
       </div>
       {company.map((Ques) => (
         <Question Ques={Ques} key={Ques._id} />

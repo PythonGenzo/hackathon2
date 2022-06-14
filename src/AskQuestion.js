@@ -25,7 +25,7 @@ export function AskQuestion(newQuestion) {
       headers: {
         "Content-Type": "application/json",
       },
-    }).then(() => navigate ("/Question"));
+    }).then(() => navigate("/Question"));
 
   return (
     <div>
